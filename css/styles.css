@@ -3,23 +3,22 @@ body {
   background-color: white;
   color: #2B2C2E; }
 
-li {
+.nav li {
   list-style: none;
   display: inline; }
-
-ul {
+.nav ul {
   display: flex;
   justify-content: flex-end;
   align-items: center; }
-
-a {
+.nav a {
   background: transparent;
   border: 0;
   cursor: pointer;
   font-size: 1em;
   margin: 0;
   padding: 0;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+  position: relative; }
 
 #about, #contact {
   color: #2B2C2E;
@@ -37,12 +36,76 @@ a {
   display: flex;
   justify-content: center;
   align-items: center; }
+  .hero .border {
+    padding: 5px;
+    border: solid;
+    border-color: #FFFFFF;
+    opacity: 0.65; }
   .hero .name {
-    padding: 20px;
-    border: solid; }
+    opacity: 0.65;
+    background: #FFFFFF;
+    padding: 20px; }
     .hero .name h1 {
-      font-family: "Raleway", sans-serif; }
+      font-family: "Raleway", sans-serif;
+      color: black; }
     .hero .name h3 {
       font-family: "Open Sans Condensed", sans-serif; }
+
+.nav2 {
+  padding-right: 40px; }
+  .nav2 #nav-dec {
+    color: #2B2C2E;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Open Sans Condensed", sans-serif; }
+  .nav2 li {
+    list-style: none;
+    display: inline; }
+  .nav2 ul {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .nav2 a {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    font-size: 1em;
+    vertical-align: baseline;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.08em 0.44em;
+    margin: 5em auto 0; }
+  .nav2 a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 0;
+    left: auto;
+    right: 0.44em;
+    top: 100%;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    -webkit-transition: width 250ms ease-out;
+    -moz-transition: width 250ms ease-out;
+    -o-transition: width 250ms ease-out;
+    transition: width 250ms ease-out; }
+  .nav2 a:hover::after {
+    width: -webkit-calc(100% - 0.44em * 2);
+    width: calc(100% - 0.44em * 2);
+    left: 0.44em;
+    right: auto; }
+
+.projects {
+  display: flex;
+  justify-content: center;
+  padding-left: 10%;
+  padding-right: 10%; }
+
+.p {
+  width: 150px;
+  height: 150px;
+  border: solid;
+  margin: 10px; }
 
 /*# sourceMappingURL=styles.css.map */

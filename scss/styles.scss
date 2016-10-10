@@ -14,34 +14,38 @@ body{
 
 
 }
+.nav{
+  li{
+    list-style: none;
+    display:inline;
+  }
+  ul{
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
 
-li{
-  list-style: none;
-  display:inline;
-}
-ul{
-  display:flex;
-  justify-content:flex-end;
-  align-items:center;
+  }
+  a {
+      background: transparent;
+      border: 0;
+      cursor: pointer;
+      font-size: 1em;
+      margin: 0;
+      padding: 0;
+      vertical-align: baseline;
+      position: relative;
 
+  }
 }
-a {
-    background: transparent;
-    border: 0;
-    cursor: pointer;
-    font-size: 1em;
-    margin: 0;
-    padding: 0;
-    vertical-align: baseline;
-}
+
 #about, #contact{
   color:#2B2C2E;
   text-decoration: none;
   text-transform: uppercase;
   font-family: $nav-font;
   padding:30px;
-
 }
+
 
 .hero{
   background-image: url(../img/mountains.jpeg);
@@ -52,14 +56,95 @@ a {
   display:flex;
   justify-content:center;
   align-items:center;
-  .name{
-    padding:20px;
+  .border{
+    padding: 5px;
     border: solid;
+    border-color: #FFFFFF;
+    opacity: 0.65;
+  }
+  .name{
+    opacity: 0.65;
+    background: #FFFFFF;
+    padding:20px;
+    // border: solid;
     h1{
       font-family: $head-font;
+      color:black;
     }
     h3{
       font-family: $nav-font;
     }
   }
+}
+
+.nav2{
+  // margin:50px;
+  padding-right:40px;
+
+  #nav-dec{
+    color:#2B2C2E;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: $nav-font;
+
+  }
+
+  li{
+    list-style: none;
+    display:inline;
+  }
+  ul{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+  }
+  a {
+      background: transparent;
+      border: 0;
+      cursor: pointer;
+      font-size: 1em;
+      vertical-align: baseline;
+      position: relative;
+    	display: inline-block;
+    	text-decoration: none;
+    	padding: 0.08em 0.44em;
+    	margin: 5em auto 0;
+  }
+  a::after {
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: 0;
+      left: auto;
+      right: 0.44em;
+      top: 100%;
+      border-bottom-style: solid;
+      border-bottom-width: 1px;
+      -webkit-transition: width 250ms ease-out;
+         -moz-transition: width 250ms ease-out;
+           -o-transition: width 250ms ease-out;
+              transition: width 250ms ease-out;
+  }
+  a:hover::after {
+      width: -webkit-calc(100% - 0.44em * 2);
+      width:         calc(100% - 0.44em * 2);
+      left: 0.44em;
+      right: auto;
+  }
+
+}
+
+
+.projects{
+  display:flex;
+  justify-content:center;
+  padding-left:10%;
+  padding-right:10%;
+}
+.p{
+  width:150px;
+  height:150px;
+  border:solid;
+  margin: 10px;
 }
