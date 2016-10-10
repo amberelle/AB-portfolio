@@ -139,7 +139,7 @@ body{
 .projects{
   display:flex;
   justify-content:center;
-  flex-wrap: nowrap;
+  flex-wrap:wrap;
   padding-left:5%;
   padding-right:5%;
 }
