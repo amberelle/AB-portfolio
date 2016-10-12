@@ -1,0 +1,23 @@
+
+$nav-font: 'Open Sans Condensed', sans-serif;
+$head-font:  'Raleway', sans-serif;
+$text-font: 'Quattrocento', serif;
+
+// // font-family: 'Raleway', sans-serif;
+// font-family: 'Open Sans Condensed', sans-serif;
+// font-family: 'Josefin Sans', sans-serif;
+// font-family: 'Quattrocento', serif;
+
+body{
+  margin:20%;
+  // margin:20px;
+  background-color: white;
+  color:#2B2C2E;
+  font-family: $text-font;
+}
+.images{
+  float:left;
+  img{
+    width:400px;
+  }
+}

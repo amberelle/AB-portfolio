@@ -1,0 +1,12 @@
+body {
+  margin: 20%;
+  background-color: white;
+  color: #2B2C2E;
+  font-family: "Quattrocento", serif; }
+
+.images {
+  float: left; }
+  .images img {
+    width: 400px; }
+
+/*# sourceMappingURL=styles2.css.map */

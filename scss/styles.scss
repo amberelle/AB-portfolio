@@ -1,7 +1,8 @@
 $nav-font: 'Open Sans Condensed', sans-serif;
 $head-font:  'Raleway', sans-serif;
+$text-font: 'Quattrocento', serif;
 
-// font-family: 'Raleway', sans-serif;
+// // font-family: 'Raleway', sans-serif;
 // font-family: 'Open Sans Condensed', sans-serif;
 // font-family: 'Josefin Sans', sans-serif;
 // font-family: 'Quattrocento', serif;
@@ -11,8 +12,7 @@ body{
   // margin:20px;
   background-color: white;
   color:#2B2C2E;
-
-
+  font-family: $text-font;
 }
 .nav{
   li{
@@ -142,20 +142,40 @@ body{
   flex-wrap:wrap;
   padding-left:5%;
   padding-right:5%;
+  a{
+    color:black;
+    text-decoration: none;
+  }
+
 }
 .p{
   width:250px;
   height:250px;
   margin: 10px;
-background: #D8D8D8;
-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+  background: #D8D8D8;
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
   transition: all .3s ease-in-out;
+  h1{
+    font-family: $head-font;
+    visibility:hidden;
+    position:relative;
+    top:75px;
+    display:flex;
+    justify-content:center;
+    text-align: center;
+  }
 }
 .p1{
   background-image: url(../img/wfdesign.png);
   background-image: no-repeat;
   background-size: cover;
 }
+
+
 .p:hover{
   transform: scale(1.05);
+  background:white;
+  h1{
+    visibility:visible;
+  }
 }

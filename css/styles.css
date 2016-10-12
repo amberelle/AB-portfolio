@@ -1,7 +1,8 @@
 body {
   margin: 0;
   background-color: white;
-  color: #2B2C2E; }
+  color: #2B2C2E;
+  font-family: "Quattrocento", serif; }
 
 .nav li {
   list-style: none;
@@ -102,6 +103,9 @@ body {
   flex-wrap: wrap;
   padding-left: 5%;
   padding-right: 5%; }
+  .projects a {
+    color: black;
+    text-decoration: none; }
 
 .p {
   width: 250px;
@@ -110,6 +114,14 @@ body {
   background: #D8D8D8;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
   transition: all .3s ease-in-out; }
+  .p h1 {
+    font-family: "Raleway", sans-serif;
+    visibility: hidden;
+    position: relative;
+    top: 75px;
+    display: flex;
+    justify-content: center;
+    text-align: center; }
 
 .p1 {
   background-image: url(../img/wfdesign.png);
@@ -117,6 +129,9 @@ body {
   background-size: cover; }
 
 .p:hover {
-  transform: scale(1.05); }
+  transform: scale(1.05);
+  background: white; }
+  .p:hover h1 {
+    visibility: visible; }
 
 /*# sourceMappingURL=styles.css.map */
