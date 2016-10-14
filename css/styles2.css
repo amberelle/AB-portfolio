@@ -1,5 +1,13 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
 body {
-  margin: 20%;
+  margin-left: 10%;
+  margin-right: 10%;
   background-color: white;
   color: #2B2C2E;
   font-family: "Quattrocento", serif; }
@@ -7,6 +15,19 @@ body {
 .images {
   float: left; }
   .images img {
-    width: 400px; }
+    width: 300px;
+    margin-right: 50px; }
+
+.header {
+  display: flex;
+  justify-content: center;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase; }
+
+.tech-used h3, .sub-header h3 {
+  font-family: "Open Sans Condensed", sans-serif; }
+
+.detail {
+  font-size: 1.2em; }
 
 /*# sourceMappingURL=styles2.css.map */

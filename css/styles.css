@@ -29,7 +29,7 @@ body {
   padding: 30px; }
 
 .hero {
-  background-image: url(../img/mountains.jpeg);
+  background-image: url(../img/stars.jpeg);
   background-image: no-repeat;
   background-size: cover;
   height: 60vh;
@@ -48,9 +48,11 @@ body {
     padding: 20px; }
     .hero .name h1 {
       font-family: "Raleway", sans-serif;
-      color: black; }
+      color: black;
+      font-size: 3em; }
     .hero .name h3 {
-      font-family: "Open Sans Condensed", sans-serif; }
+      font-family: "Open Sans Condensed", sans-serif;
+      font-size: 2em; }
 
 .nav2 {
   padding-right: 40px; }
@@ -115,7 +117,7 @@ body {
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
   transition: all .3s ease-in-out; }
   .p h1 {
-    font-family: "Raleway", sans-serif;
+    font-family: "Open Sans Condensed", sans-serif;
     visibility: hidden;
     position: relative;
     top: 75px;

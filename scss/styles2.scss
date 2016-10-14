@@ -1,4 +1,13 @@
 
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+
 $nav-font: 'Open Sans Condensed', sans-serif;
 $head-font:  'Raleway', sans-serif;
 $text-font: 'Quattrocento', serif;
@@ -9,15 +18,38 @@ $text-font: 'Quattrocento', serif;
 // font-family: 'Quattrocento', serif;
 
 body{
-  margin:20%;
+  margin-left:10%;
+  margin-right:10%;
   // margin:20px;
   background-color: white;
   color:#2B2C2E;
   font-family: $text-font;
 }
+
 .images{
   float:left;
   img{
-    width:400px;
+    width:300px;
+    margin-right:50px;
   }
+}
+.content{
+
+}
+.header{
+  display:flex;
+  justify-content: center;
+  font-family: $head-font;
+  text-transform: uppercase;
+}
+.sub-header{
+  @extend .tech-used;
+}
+.tech-used{
+  h3{
+    font-family: $nav-font;
+  }
+}
+.detail{
+  font-size: 1.2em;
 }
