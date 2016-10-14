@@ -9,14 +9,17 @@
 
 
 $nav-font: 'Open Sans Condensed', sans-serif;
-$head-font:  'Raleway', sans-serif;
-$text-font: 'Quattrocento', serif;
+$head-font:  'Work Sans', sans-serif;
+$text-font: 'Playfair Display', serif;
 
 // // font-family: 'Raleway', sans-serif;
 // font-family: 'Open Sans Condensed', sans-serif;
 // font-family: 'Josefin Sans', sans-serif;
 // font-family: 'Quattrocento', serif;
-
+// font-family: 'Work Sans', sans-serif;
+// font-family: 'Oxygen', sans-serif;
+// font-family: 'Poppins', sans-serif;
+// font-family: 'Playfair Display', serif;
 body{
 
   background-color: white;
@@ -101,10 +104,12 @@ body{
 }
 .sub-header{
   @extend .tech-used;
+  font-size: 1.2em;
 }
 .tech-used{
   h3{
     font-family: $nav-font;
+
   }
 }
 .detail{

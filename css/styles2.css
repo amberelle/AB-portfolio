@@ -8,7 +8,7 @@
 body {
   background-color: white;
   color: #2B2C2E;
-  font-family: "Quattrocento", serif; }
+  font-family: "Playfair Display", serif; }
 
 .nav li {
   list-style: none;
@@ -66,9 +66,12 @@ body {
   margin-top: 50px;
   display: flex;
   justify-content: center;
-  font-family: "Raleway", sans-serif;
+  font-family: "Work Sans", sans-serif;
   text-transform: uppercase;
   text-align: center; }
+
+.sub-header {
+  font-size: 1.2em; }
 
 .tech-used h3, .sub-header h3 {
   font-family: "Open Sans Condensed", sans-serif; }
