@@ -14,22 +14,43 @@ body {
 .nav a {
   background: transparent;
   border: 0;
-  cursor: pointer;
-  font-size: 1em;
   margin: 0;
   padding: 0;
+  cursor: pointer;
+  font-size: 1em;
   vertical-align: baseline;
-  position: relative; }
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.08em 0.44em;
+  margin: 0 auto 0; }
+.nav a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 0;
+  left: auto;
+  right: 0.44em;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  -webkit-transition: width 250ms ease-out;
+  -moz-transition: width 250ms ease-out;
+  -o-transition: width 250ms ease-out;
+  transition: width 250ms ease-out; }
+.nav a:hover::after {
+  width: -webkit-calc(100% - 0.44em * 2);
+  width: calc(100% - 0.44em * 2);
+  left: 0.44em;
+  right: auto; }
 
 #about, #contact, #projects {
   color: #2B2C2E;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: "Open Sans Condensed", sans-serif;
-  padding: 30px; }
+  font-family: "Open Sans Condensed", sans-serif; }
 
 .hero {
-  background-image: url(../img/stars.jpeg);
+  background-image: url(../img/trees.jpeg);
   background-image: no-repeat;
   background-size: cover;
   height: 60vh;
@@ -40,11 +61,11 @@ body {
   .hero .border {
     padding: 5px;
     border: solid;
-    border-color: #FFFFFF;
-    opacity: 0.65; }
+    border-color: white;
+    opacity: 0.8;
+    z-index: 5; }
   .hero .name {
-    opacity: 0.65;
-    background: #FFFFFF;
+    background: white;
     padding: 20px; }
     .hero .name h1 {
       font-family: "Raleway", sans-serif;

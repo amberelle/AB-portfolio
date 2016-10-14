@@ -18,12 +18,69 @@ $text-font: 'Quattrocento', serif;
 // font-family: 'Quattrocento', serif;
 
 body{
-  margin-left:10%;
-  margin-right:10%;
-  // margin:20px;
+
   background-color: white;
   color:#2B2C2E;
   font-family: $text-font;
+}
+.nav{
+
+  li{
+    list-style: none;
+    display:inline;
+
+  }
+  ul{
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+
+  }
+  a {
+    background: transparent;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    font-size: 1em;
+    vertical-align: baseline;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.08em 0.44em;
+    margin: 0 auto 0;
+
+  }
+  a::after {
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: 0;
+      left: auto;
+      right: 0.44em;
+      // top: 100%;  this changes underline to the bottom
+      border-bottom-style: solid;
+      border-bottom-width: 1px;
+      -webkit-transition: width 250ms ease-out;
+         -moz-transition: width 250ms ease-out;
+           -o-transition: width 250ms ease-out;
+              transition: width 250ms ease-out;
+  }
+  a:hover::after {
+      width: -webkit-calc(100% - 0.44em * 2);
+      width:         calc(100% - 0.44em * 2);
+      left: 0.44em;
+      right: auto;
+  }
+
+}
+
+#about, #contact, #projects{
+  color:#2B2C2E;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: $nav-font;
+    margin:0;
 }
 
 .images{
@@ -33,14 +90,14 @@ body{
     margin-right:50px;
   }
 }
-.content{
 
-}
 .header{
+  margin-top:50px;
   display:flex;
   justify-content: center;
   font-family: $head-font;
   text-transform: uppercase;
+  text-align: center;
 }
 .sub-header{
   @extend .tech-used;
@@ -52,4 +109,24 @@ body{
 }
 .detail{
   font-size: 1.2em;
+}
+.content {
+  margin-left:10%;
+  margin-right:10%;
+    margin-top:100px;
+  display:table;
+  .header .images{
+    display: table-cell;
+   vertical-align: middle;
+   width: 50%;
+  }
+}
+
+.images2{
+  display:flex;
+  justify-content:center;
+  margin-top:100px;
+  img{
+    margin:2%;
+  }
 }
