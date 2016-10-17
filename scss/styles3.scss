@@ -1,0 +1,90 @@
+$nav-font: 'Open Sans Condensed', sans-serif;
+$head-font:  'Work Sans', sans-serif;
+$text-font: 'Quattrocento', serif;
+
+body{
+  margin:0;
+  // margin:20px;
+  background-color: white;
+  color:#2B2C2E;
+  font-family: $text-font;
+}
+.nav{
+  margin-right:10px;
+  li{
+    list-style: none;
+    display:inline;
+  }
+  ul{
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+
+  }
+  a {
+      background: transparent;
+      border: 0;
+      margin: 0;
+      padding: 0;
+      cursor: pointer;
+      font-size: 1em;
+      vertical-align: baseline;
+      position: relative;
+      display: inline-block;
+      text-decoration: none;
+      padding: 0.08em 0.44em;
+      margin: 0 auto 0;
+  }
+  a::after {
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: 0;
+      left: auto;
+      right: 0.44em;
+
+      border-bottom-style: solid;
+      border-bottom-width: 1px;
+      -webkit-transition: width 250ms ease-out;
+         -moz-transition: width 250ms ease-out;
+           -o-transition: width 250ms ease-out;
+              transition: width 250ms ease-out;
+  }
+  a:hover::after {
+      width: -webkit-calc(100% - 0.44em * 2);
+      width:         calc(100% - 0.44em * 2);
+      left: 0.44em;
+      right: auto;
+  }
+
+}
+
+#about, #contact, #projects{
+  color:#2B2C2E;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: $nav-font;
+
+}
+
+//////nav ends////
+
+.about{
+  margin:0 20% 0 20%;
+  text-align:center;
+  img{
+
+  }
+  h1{
+    font-family:$head-font
+  }
+  h3{
+    font-family:$nav-font;
+  }
+  h5{
+    font-family:$text-font;
+  }
+  .about-head{
+
+  }
+}

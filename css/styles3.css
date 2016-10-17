@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  background-color: white;
+  color: #2B2C2E;
+  font-family: "Quattrocento", serif; }
+
+.nav {
+  margin-right: 10px; }
+  .nav li {
+    list-style: none;
+    display: inline; }
+  .nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
+  .nav a {
+    background: transparent;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    font-size: 1em;
+    vertical-align: baseline;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.08em 0.44em;
+    margin: 0 auto 0; }
+  .nav a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 0;
+    left: auto;
+    right: 0.44em;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    -webkit-transition: width 250ms ease-out;
+    -moz-transition: width 250ms ease-out;
+    -o-transition: width 250ms ease-out;
+    transition: width 250ms ease-out; }
+  .nav a:hover::after {
+    width: -webkit-calc(100% - 0.44em * 2);
+    width: calc(100% - 0.44em * 2);
+    left: 0.44em;
+    right: auto; }
+
+#about, #contact, #projects {
+  color: #2B2C2E;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Open Sans Condensed", sans-serif; }
+
+.about {
+  margin: 0 20% 0 20%;
+  text-align: center; }
+  .about h1 {
+    font-family: "Work Sans", sans-serif; }
+  .about h3 {
+    font-family: "Open Sans Condensed", sans-serif; }
+  .about h5 {
+    font-family: "Quattrocento", serif; }
+
+/*# sourceMappingURL=styles3.css.map */
