@@ -51,28 +51,9 @@ body {
   text-transform: uppercase;
   font-family: "Open Sans Condensed", sans-serif; }
 
-.hero {
-  height: 75vh;
-  text-align: center;
+.hero1 {
   display: flex;
-  justify-content: center;
-  align-items: center; }
-  .hero .border {
-    padding: 5px;
-    border: solid;
-    border-color: white;
-    opacity: 0.8;
-    z-index: 5; }
-  .hero .name {
-    background: white;
-    padding: 20px; }
-    .hero .name h1 {
-      font-family: "Work Sans", sans-serif;
-      color: black;
-      font-size: 3em; }
-    .hero .name h3 {
-      font-family: "Open Sans Condensed", sans-serif;
-      font-size: 2em; }
+  justify-content: center; }
 
 .nav2 {
   padding-right: 40px; }
@@ -165,49 +146,5 @@ body {
   background: white; }
   .p:hover h1 {
     visibility: visible; }
-
-@keyframes move-twink-back {
-  from {
-    background-position: 0 0; }
-  to {
-    background-position: -10000px 5000px; } }
-@-webkit-keyframes move-twink-back {
-  from {
-    background-position: 0 0; }
-  to {
-    background-position: -10000px 5000px; } }
-@-moz-keyframes move-twink-back {
-  from {
-    background-position: 0 0; }
-  to {
-    background-position: -10000px 5000px; } }
-@-ms-keyframes move-twink-back {
-  from {
-    background-position: 0 0; }
-  to {
-    background-position: -10000px 5000px; } }
-.stars, .twinkling {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 75vh;
-  display: block;
-  margin-top: 60px; }
-
-.stars {
-  background: #000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
-  z-index: 0; }
-
-.twinkling {
-  background: transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
-  z-index: 1;
-  -moz-animation: move-twink-back 200s linear infinite;
-  -ms-animation: move-twink-back 200s linear infinite;
-  -o-animation: move-twink-back 200s linear infinite;
-  -webkit-animation: move-twink-back 200s linear infinite;
-  animation: move-twink-back 200s linear infinite; }
 
 /*# sourceMappingURL=styles.css.map */
