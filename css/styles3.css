@@ -44,6 +44,8 @@ body {
     width: calc(100% - 0.44em * 2);
     left: 0.44em;
     right: auto; }
+  .nav a:active {
+    color: yellow; }
 
 #about, #contact, #projects {
   color: #2B2C2E;

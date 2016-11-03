@@ -56,6 +56,9 @@ body{
       left: 0.44em;
       right: auto;
   }
+  a:active{
+    color:yellow;
+  }
 
 }
 
@@ -114,7 +117,7 @@ body{
       position:absolute;
       top:50%;
       left:30%;
-    
+
     }
   }
 
@@ -136,7 +139,6 @@ body{
     .social-links{
       display:flex;
       justify-content:center;
-
     }
   }
   #li, #gh{

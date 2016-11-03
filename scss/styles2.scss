@@ -10,7 +10,7 @@
 
 $nav-font: 'Open Sans Condensed', sans-serif;
 $head-font:  'Work Sans', sans-serif;
-$text-font: 'Playfair Display', serif;
+$text-font: 'Quattrocento', serif;
 
 // // font-family: 'Raleway', sans-serif;
 // font-family: 'Open Sans Condensed', sans-serif;
@@ -137,6 +137,14 @@ body{
     margin:2%;
   }
 }
+.images3{
+  display:flex;
+  justify-content:center;
+  margin-top:100px;
+  img{
+    
+  }
+}
 
 .es-images{
   margin:100px;
@@ -148,7 +156,7 @@ body{
   }
 }
 
-.button{
+.button2{
     margin-bottom:20px;
     background-color: #FDEE48;
     border: none;
@@ -162,6 +170,10 @@ body{
     font-family: $text-font;
   }
 }
-.button:hover {
+.button2:hover {
     box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+}
+.button3{
+  @extend .button2;
+  background-color:#84BC96;
 }
