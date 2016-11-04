@@ -80,7 +80,7 @@ body {
         display: flex;
         justify-content: center;
         margin: auto;
-        width: 500px; } }
+        width: 300px; } }
     @media screen and (max-width: 500px) {
       .images img {
         width: 100%;
