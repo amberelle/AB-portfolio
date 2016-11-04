@@ -2,6 +2,10 @@ $nav-font: 'Open Sans Condensed', sans-serif;
 $head-font:  'Work Sans', sans-serif;
 $text-font: 'Quattrocento', serif;
 
+$break-small: 480px;
+$break-medium: 900px;
+
+
 // // font-family: 'Raleway', sans-serif;
 // font-family: 'Open Sans Condensed', sans-serif;
 // font-family: 'Josefin Sans', sans-serif;
@@ -9,24 +13,42 @@ $text-font: 'Quattrocento', serif;
 // font-family: 'Work Sans', sans-serif;
 // font-family: 'Oxygen', sans-serif;
 // font-family: 'Poppins', sans-serif;
+
+
 body{
   margin:0;
   // margin:20px;
   background-color: white;
   color:#2B2C2E;
   font-family: $text-font;
+  // @media screen and (max-width : $break-small) {
+  //   background-color:red;
+  // }
 }
 .nav{
   margin-right:10px;
+  position:fixed;
+  right: 40px;
+  @media screen and (max-width : $break-small) {
+    margin-right:30px;
+  }
   li{
     list-style: none;
     display:inline;
+
   }
   ul{
     display:flex;
     justify-content:flex-end;
     align-items:center;
-
+    @media screen and (max-width : $break-small) {
+      justify-content:center;
+      font-size: 1.5em;
+    }
+    @media screen and (max-width : $break-medium) {
+      
+      font-size: 1.2em;
+    }
   }
   a {
       background: transparent;
@@ -179,6 +201,10 @@ body{
   flex-wrap:wrap;
   padding-left:5%;
   padding-right:5%;
+  @media screen and (max-width : $break-medium) {
+    margin-bottom:0;
+    margin-top:200px;
+  }
   a{
     color:black;
     text-decoration: none;
@@ -194,6 +220,14 @@ body{
   background: #D8D8D8;
   box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
   transition: all .3s ease-in-out;
+  @media screen and (max-width : $break-small) {
+    margin-bottom:0;
+    margin-top:20px;
+  }
+  @media screen and (max-width : $break-medium) {
+    margin-bottom:0;
+    margin-top:20px;
+  }
   h1{
     font-family: $nav-font;
     visibility:hidden;
